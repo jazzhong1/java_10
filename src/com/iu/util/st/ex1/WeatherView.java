@@ -2,30 +2,23 @@ package com.iu.util.st.ex1;
 
 public class WeatherView {
 
-	public void weatherView(Weather[] weathers) {
+	public void weatherView(Weather[] wr) {
 
-		for (Weather weather : weathers) {
-			System.out.println(weather.getLocation());
-			System.out.println(weather.getGion());
-			System.out.println(weather.getHum());
-			System.out.println(weather.getWind());
-
+		for (Weather weathers : wr) {
+		
+			this.weatherView(weathers);
 		}
 	}
 
 	public void weatherView(Weather weathers) {
-
-		System.out.println(weathers.getLocation());
-		System.out.println(weathers.getGion());
-		System.out.println(weathers.getHum());
-		System.out.println(weathers.getWind());
-
+		System.out.println("지역:"+weathers.getLocation());
+		System.out.println("온도:"+weathers.getGion());
+		System.out.println("습도:"+weathers.getHum());
+		System.out.println("바람:"+weathers.getWind());
 	}
 
 	public void weatherView(String str) {
-
 		System.out.println(str);
 
 	}
-
 }

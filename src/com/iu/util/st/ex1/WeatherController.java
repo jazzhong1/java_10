@@ -8,7 +8,6 @@ private	WeatherInfo info;
 private	WeatherView view;
 private WeatherSearch search;
 private	Scanner sc;
-private Weather[]  weathers;
 private Weather weather;
 	
 	
@@ -19,7 +18,7 @@ private Weather weather;
 		view=new WeatherView();
 		search=new WeatherSearch();
 		sc=new Scanner(System.in);
-		weathers=info.getWeather();
+		WeaterDatabase.weathers=info.getWeather();
 	}
 	
 	public void start(){
@@ -31,12 +30,12 @@ private Weather weather;
 			switch (num) {
 			case 1:
 				System.out.println("전체날씨정보출력");
-				view.weatherView(weathers);
+				view.weatherView(WeaterDatabase.weathers);
 				break;
 				
 			case 2:
 				System.out.println("지역검색");
-				weather=search.search(weathers);
+				weather=search.search(WeaterDatabase.weathers);
 
 				if(weather!=null){
 					view.weatherView(weather);
@@ -49,7 +48,8 @@ private Weather weather;
 				
 			case 3:
 				System.out.println("날씨정보 초기화");
-				weathers=info.getWeather();
+				WeaterDatabase.weathers=info.getWeather();
+				view.weatherView("초기화 완료");
 				
 				break;
 				
