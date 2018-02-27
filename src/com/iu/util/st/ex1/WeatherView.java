@@ -5,7 +5,6 @@ public class WeatherView {
 	public void weatherView(Weather[] wr) {
 
 		for (Weather weathers : wr) {
-		
 			this.weatherView(weathers);
 		}
 	}
@@ -19,6 +18,5 @@ public class WeatherView {
 
 	public void weatherView(String str) {
 		System.out.println(str);
-
 	}
 }
