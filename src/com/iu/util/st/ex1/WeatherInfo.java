@@ -17,7 +17,6 @@ import java.util.*;
 public class WeatherInfo {
 	private String weaterInfo;
 	private Weather weather;
-	StringTokenizer stz;
 	
 	public WeatherInfo() {
 		
@@ -37,9 +36,9 @@ public class WeatherInfo {
 		
 		// 지역,온도,습도,풍향
 		setWeaterInfo("seoul,10,50,남서," + "busan,32,80,남동," + "daegu,-22,10,북서," + "jeju,-32,75,북서");
-		stz=new StringTokenizer(weaterInfo, ",");
+		StringTokenizer stz=new StringTokenizer(weaterInfo, ",");
 		int count=stz.countTokens();
-		count=count/4;
+		count/=4;
 		WeaterDatabase.weathers=new Weather[count];
 		
 		

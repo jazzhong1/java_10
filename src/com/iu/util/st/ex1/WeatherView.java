@@ -10,6 +10,7 @@ public class WeatherView {
 	}
 
 	public void weatherView(Weather weathers) {
+		System.out.println("===========================");
 		System.out.println("지역:"+weathers.getLocation());
 		System.out.println("온도:"+weathers.getGion());
 		System.out.println("습도:"+weathers.getHum());

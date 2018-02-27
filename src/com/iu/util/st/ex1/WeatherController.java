@@ -8,7 +8,6 @@ private	WeatherInfo info;
 private	WeatherView view;
 private WeatherSearch search;
 private	Scanner sc;
-private Weather weather;
 	
 	
 	
@@ -35,10 +34,10 @@ private Weather weather;
 				
 			case 2:
 				System.out.println("지역검색");
-				weather=search.search(WeaterDatabase.weathers);
+				WeaterDatabase.weather=search.search(WeaterDatabase.weathers);
 
-				if(weather!=null){
-					view.weatherView(weather);
+				if(WeaterDatabase.weather!=null){
+					view.weatherView(WeaterDatabase.weather);
 				}
 				else{
 					view.weatherView("나라가 없습니다.");

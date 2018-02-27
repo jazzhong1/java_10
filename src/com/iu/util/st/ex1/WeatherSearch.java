@@ -23,5 +23,4 @@ public class WeatherSearch {
 		}
 		return weather;
 	}
-
 }
