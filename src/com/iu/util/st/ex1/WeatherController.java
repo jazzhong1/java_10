@@ -17,12 +17,13 @@ private	Scanner sc;
 		view=new WeatherView();
 		search=new WeatherSearch();
 		sc=new Scanner(System.in);
-		WeaterDatabase.weathers=info.getWeather();
 	}
 	
 	public void start(){
 		
 		boolean check=true;
+		WeaterDatabase.weathers=info.getWeather();		//파싱 데이터베이스에 입력
+		
 		while(check){
 			System.out.println("1.전체날씨정보출력|2.지역검색|3.날씨정보 초기화|4.종료");
 			int num=sc.nextInt();
@@ -57,6 +58,7 @@ private	Scanner sc;
 				break;
 
 			default:
+				view.weatherView("잘못 입력");
 				break;
 			}
 		
