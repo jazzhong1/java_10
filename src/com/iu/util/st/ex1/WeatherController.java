@@ -8,7 +8,7 @@ private	WeatherInfo info;
 private	WeatherView view;
 private WeatherSearch search;
 private	Scanner sc;
-private Weather[] weathers;
+private Weather[]  weathers;
 private Weather weather;
 	
 	
