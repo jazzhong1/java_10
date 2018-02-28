@@ -17,7 +17,9 @@ public class Random_test2 {
 			lotto[i] = num;
 		}
 
+		
 		for (int i = 0; i < lotto.length; i++) {
+			
 			for (int j = i + 1; j < lotto.length; j++) {
 				if (lotto[i] == lotto[j]) {
 					j--;
