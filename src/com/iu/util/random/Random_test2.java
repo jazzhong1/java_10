@@ -14,12 +14,23 @@ public class Random_test2 {
 		for (int i = 0; i < lotto.length; i++) {
 			Random random = new Random();
 			num = random.nextInt(45) + 1;
-			lotto[i] = num;
+			if (i == 0) {
+				lotto[i] = num;
+			} else {
+				lotto[i] = num;
+				for (int j = i + 1; j < lotto.length; j++) {
+					if (lotto[i] == lotto[j]) {
+						j--;
+						num = random.nextInt(45) + 1;
+						lotto[j + 1] = num;
+						continue;
+					}
+				}
+			}
 		}
 
-		
 		for (int i = 0; i < lotto.length; i++) {
-			
+
 			for (int j = i + 1; j < lotto.length; j++) {
 				if (lotto[i] == lotto[j]) {
 					j--;
