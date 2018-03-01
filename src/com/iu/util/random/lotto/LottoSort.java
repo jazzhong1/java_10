@@ -12,9 +12,9 @@ public class LottoSort {
 				num=lotto[i].getLotto();
 			for (int j = 0; j < num.length; j++) {
 				for (int j2 = j+1; j2 < num.length; j2++) {
-					if(num[i]>num[j2]){
-						int temp=num[i];
-						num[i]=num[j2];
+					if(num[j]>num[j2]){
+						int temp=num[j];
+						num[j]=num[j2];
 						num[j2]=temp;
 					}
 					

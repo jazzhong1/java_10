@@ -8,6 +8,7 @@ public class Lotto {
 	private int count;
 	private int nmg;
 	
+	
 	public int getMoney() {
 		return money;
 	}

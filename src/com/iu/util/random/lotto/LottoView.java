@@ -7,6 +7,7 @@ public class LottoView {
 	public void view(Lotto[] lotto){
 		int num[];
 		char a=65;
+		System.out.println("발급중.....");
 		for (int i = 0; i < lotto.length; i++) {
 			num=lotto[i].getLotto();
 			a=(char)(a+i);
