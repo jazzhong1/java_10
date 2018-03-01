@@ -17,7 +17,6 @@ public class LottoController {
 		lottoSort = new LottoSort();
 		lottoView = new LottoView();
 		lottery = new Lottery();
-		LottoDataBase.lottoResult = lottoRandom.random();
 		sc = new Scanner(System.in);
 	}
 
@@ -51,9 +50,11 @@ public class LottoController {
 
 			case 2:
 				System.out.println("당첨번호:");
-				lottoView.view();
-				lottery.check();
-				System.out.println(lotto.getRank() + "등 입니다.");
+				int result[]=lottoRandom.random();
+				lottoView.view(result);
+				result=lottery.check(result);
+				
+				System.out.println(lottoView.rank(result) + "등 입니다.");
 				break;
 
 			case 3:

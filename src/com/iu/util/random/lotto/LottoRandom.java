@@ -35,26 +35,19 @@ public class LottoRandom {
 
 	}
 	
-	public Lotto[] random() {
+	public int[] random() {
 
-		LottoDataBase.lottoResult = new Lotto[1];
-		random = new Random(calendar.getTimeInMillis());
-
-		for (int i = 0; i < 1; i++) {
-			LottoDataBase.lottoResult[i] = new Lotto();
-			int[] lotto = new int[6];
-			for (int j = 0; j < lotto.length; j++) {
-				lotto[j] = random.nextInt(45) + 1;
+			int[] result = new int[6];
+			for (int j = 0; j < result.length; j++) {
+				result[j] = random.nextInt(45) + 1;
 				for (int j2 = 0; j2 < j; j2++) {
-					if (lotto[j] == lotto[j2]) {
+					if (result[j] == result[j2]) {
 						j--;
 						break;
 					}
 				}
 			}
-			LottoDataBase.lottoResult[0].setLotto(lotto);
-		}
-		return LottoDataBase.lottoResult;
+		return result;
 
 	}
 

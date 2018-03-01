@@ -10,24 +10,24 @@ public class Lottery {
 	
 	
 	
-	public void check(){
+	public int[] check(int[] result){
 		int num1[];
 		int num2[];
 		int num3[];
 		int count=0;
+		int count2=-1;
 	
-		num3=new int[lotto.getCount()];
-		
-		num1=LottoDataBase.lottoResult[0].getLotto();
+		num3=new int[LottoDataBase.lottoArray.length];
+		num1=result;
 		for (int i = 0; i < LottoDataBase.lottoArray.length; i++) {
 			num2=LottoDataBase.lottoArray[i].getLotto();
-			for (int j = 0; j < num1.length; j++) {
-				for (int j2 = 0; j2 < num2.length; j2++) {
-					if(num1[j2]==num2[j]){
+			for (int j = 0; j < num2.length; j++) {
+				for (int j2 = 0; j2 < num1.length; j2++) {
+					if(num1[j]==num2[j2]){
 						count++;
 					}
-					
 				}
+				count2++;
 
 				if(count==6){
 					count=1;
@@ -45,10 +45,14 @@ public class Lottery {
 					count=0;
 				}
 				
-				LottoDataBase.lottoArray[i].setRank(count);
+				for (int j2 = count2; j2 <=count2; j2++) {
+					num3[j2]=count;
+					
+				}
 			}
 			
 		}
+		return num3;
 		
 	}
 
