@@ -19,6 +19,15 @@ public class LottoView {
 		}
 	}
 	
+	public void view(){
+		int num[]=LottoDataBase.lottoResult[0].getLotto();
+		for (int i = 0; i < num.length; i++) {
+				System.out.print(num[i]+" ");
+			}
+		}
+	
+	
+	
 	public void view(String str){
 		System.out.println(str);
 	}

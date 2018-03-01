@@ -4,9 +4,12 @@ public class Lotto {
 	
 	private int money;
 	private int[] lotto;
-	private int[] result;
 	private int count;
 	private int nmg;
+	private int rank;
+	
+	public Lotto() {
+	}
 	
 	
 	public int getMoney() {
@@ -37,11 +40,16 @@ public class Lotto {
 	public void setNmg(int nmg) {
 		this.nmg = nmg;
 	}
-	public int[] getResult() {
-		return result;
+
+
+	public int getRank() {
+		return rank;
 	}
-	public void setResult(int[] result) {
-		this.result = result;
+
+
+	public void setRank(int rank) {
+		this.rank=rank;
+		
 	}
 
 }
