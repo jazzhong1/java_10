@@ -10,7 +10,7 @@ public class Lottery {
 	
 	
 	
-	public int[] check(){
+	public void check(){
 		int num1[];
 		int num2[];
 		int num3[];
@@ -45,14 +45,10 @@ public class Lottery {
 					count=0;
 				}
 				
-				LottoDataBase.lottoArray[i].setCount(count);
+				LottoDataBase.lottoArray[i].setRank(count);
 			}
 			
 		}
-		
-		
-		return num3;
-		
 		
 	}
 

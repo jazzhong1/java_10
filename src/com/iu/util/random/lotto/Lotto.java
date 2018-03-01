@@ -6,7 +6,7 @@ public class Lotto {
 	private int[] lotto;
 	private int count;
 	private int nmg;
-	private int rank;
+	private int rank[];
 	
 	public Lotto() {
 	}
@@ -42,12 +42,12 @@ public class Lotto {
 	}
 
 
-	public int getRank() {
+	public int[] getRank() {
 		return rank;
 	}
 
 
-	public void setRank(int rank) {
+	public void setRank(int[] rank) {
 		this.rank=rank;
 		
 	}

@@ -31,5 +31,13 @@ public class LottoView {
 	public void view(String str){
 		System.out.println(str);
 	}
+	
+	public void rank(Lotto[] lotto){
+		int num;
+		for (int i = 0; i < lotto.length; i++) {
+			num=lotto[i].getCount();
+		}
+		
+	}
 
 }
