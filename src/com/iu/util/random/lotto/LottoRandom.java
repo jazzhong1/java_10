@@ -11,33 +11,25 @@ public class LottoRandom {
 		lottos=new Lotto();
 	}
 
-	public int[] random(int count){
+	public Lotto[] random(int count){
 		
-		int[] lotto=new int[6];
+		LottoDataBase.lottoArray=new Lotto[count];
 		
 		for (int i = 0; i < count; i++) {
-			Random random = new Random();
-			int num = random.nextInt(45) + 1;
-			if (i == 0) {
-				lotto[i] = num;
-			} else {
-				lotto[i] = num;
-				for (int j = 0; j < lotto.length; j++) {
-					if(i==j){
-						continue;
-					}
-					if (lotto[j] == lotto[i]) {
+			LottoDataBase.lottoArray[i]=new Lotto();
+			int[] lotto=new int[6];
+			for (int j = 0; j < lotto.length; j++) {
+					lotto[j]=random.nextInt(45)+1;
+				for (int j2 = 0; j2 < j; j2++) {
+					if(lotto[j]==lotto[j2]){
 						j--;
-						num = random.nextInt(45) + 1;
-						lotto[j + 1] = num;
-						continue;
+						break;
 					}
 				}
 			}
+			LottoDataBase.lottoArray[i].setLotto(lotto);
 		}
-		lottos.setResult(lotto);
-//		return LottoDataBase.lottoArray;
-		return lotto;
+		return LottoDataBase.lottoArray;
 		
 	}
 }

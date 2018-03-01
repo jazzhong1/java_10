@@ -11,8 +11,12 @@ public class Lotto {
 	public int getMoney() {
 		return money;
 	}
-	public void setMoney(int money) {
-		this.money = money;
+	public boolean setMoney(int money) {
+		if(money>1000){
+			this.money = money;
+			return true;
+		}
+		return false;
 	}
 	public int[] getLotto() {
 		return lotto;

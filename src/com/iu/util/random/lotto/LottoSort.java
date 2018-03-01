@@ -5,7 +5,7 @@ public class LottoSort {
 	
 	
 	
-	public int[] sort(int[] lotto){
+	public void sort(int[] lotto){
 		for (int i = 0; i < lotto.length; i++) {
 			for (int j = i+1; j < lotto.length; j++) {
 				if(lotto[i]>lotto[j]){
@@ -16,8 +16,6 @@ public class LottoSort {
 				
 			}
 		}
-		LottoDataBase.lottoArray=lotto;
-		return LottoDataBase.lottoArray;
 	}
 
 }
