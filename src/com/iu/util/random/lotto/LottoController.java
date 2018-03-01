@@ -29,13 +29,13 @@ public class LottoController {
 			System.out.println("받은 돈:"+lotto.getMoney()+"원");
 			System.out.println("거스름 돈:"+lotto.getNmg()+"원");
 			LottoDataBase.lottoArray=lottoRandom.random(lotto.getCount());
+			lottoSort.sort(LottoDataBase.lottoArray);
 			lottoView.view(LottoDataBase.lottoArray);
 		}
 		
 		else{
 			lottoView.view("돈이 부족합니다.");
 		}
-//		lottoSort.sort(LottoDataBase.lottoArray);
 		
 		
 	}

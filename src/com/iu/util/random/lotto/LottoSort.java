@@ -5,17 +5,24 @@ public class LottoSort {
 	
 	
 	
-	public void sort(int[] lotto){
+	public Lotto[] sort(Lotto[] lotto){
+		
+		int num[];
 		for (int i = 0; i < lotto.length; i++) {
-			for (int j = i+1; j < lotto.length; j++) {
-				if(lotto[i]>lotto[j]){
-					int temp=lotto[i];
-					lotto[i]=lotto[j];
-					lotto[j]=temp;
+				num=lotto[i].getLotto();
+			for (int j = 0; j < num.length; j++) {
+				for (int j2 = j+1; j2 < num.length; j2++) {
+					if(num[i]>num[j2]){
+						int temp=num[i];
+						num[i]=num[j2];
+						num[j2]=temp;
+					}
+					
 				}
-				
 			}
+			LottoDataBase.lottoArray[i].setLotto(num);
 		}
+		return LottoDataBase.lottoArray;
 	}
 
 }
