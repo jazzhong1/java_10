@@ -2,7 +2,7 @@ package com.iu.util.random.lotto;
 
 public class LottoSort {
 
-	public Lotto[] sort(Lotto[] lotto) {
+	public void sort(Lotto[] lotto) {
 
 		int num[];
 		for (int i = 0; i < lotto.length; i++) {
@@ -19,7 +19,6 @@ public class LottoSort {
 			}
 			LottoDataBase.lottoArray[i].setLotto(num);
 		}
-		return LottoDataBase.lottoArray;
 	}
 
 	public int[] sort(int[] result) {

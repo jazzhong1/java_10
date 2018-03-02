@@ -40,6 +40,9 @@ public class LottoView {
 				min=result[i];
 			}
 		}
+		if(min==0){
+			min=6;
+		}
 		return min;
 	}
 
