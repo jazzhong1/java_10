@@ -12,7 +12,6 @@ public class Lottery {
 		int num2[];
 		int num3[];
 		int count = 0;
-		int count2 = -1;
 
 		num3 = new int[LottoDataBase.lottoArray.length];
 		num1 = result;
