@@ -47,13 +47,19 @@ public class WeatherInfo {
 			Weather weather=new Weather();
 			
 			String result=stz.nextToken();
+			
+			
 			weather.setLocation(result);
+			
 			result=stz.nextToken();
-			weather.setGion(result);
+			weather.setGion(Integer.parseInt(result));
+			
 			result=stz.nextToken();
-			weather.setHum(result);
+			weather.setHum(Integer.parseInt(result));
+			
 			result=stz.nextToken();
 			weather.setWind(result);
+			
 			WeaterDatabase.weathers[i]=weather;
 			
 		}

@@ -15,7 +15,6 @@ public class Wrapper_test3 {
 		Scanner sc=new Scanner(System.in);
 		System.out.print("비밀번호를 입력하세요");
 		String pw=sc.next();
-		char[] result=pw.toCharArray();
 		
 		boolean check=true;
 		System.out.println("비밀번호체크중..");
@@ -28,7 +27,7 @@ public class Wrapper_test3 {
 		
 		count=pw.length();
 		
-		for (int i = 0; i < result.length; i++) {
+		for (int i = 0; i < count; i++) {
 			char ch=pw.charAt(i);
 				if(Character.isUpperCase(ch)){
 					upperCount++;

@@ -35,9 +35,7 @@ public class Lottery {
 				} else {
 					count = 0;
 				}
-
 			}
-
 			num3[i] = count;
 		}
 
