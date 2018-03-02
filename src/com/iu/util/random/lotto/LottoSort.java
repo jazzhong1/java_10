@@ -20,7 +20,7 @@ public class LottoSort {
 			LottoDataBase.lottoArray[i].setLotto(num);
 		}
 	}
-
+	
 	public int[] sort(int[] result) {
 
 		for (int j = 0; j < result.length; j++) {
