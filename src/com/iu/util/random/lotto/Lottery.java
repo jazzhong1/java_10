@@ -45,12 +45,12 @@ public class Lottery {
 					count=0;
 				}
 				
-				for (int j2 = count2; j2 <=count2; j2++) {
-					num3[j2]=count;
-					
-				}
 			}
 			
+			for (int j2 = count2; j2 <=count2; j2++) {
+				num3[j2]=count;
+				
+			}
 		}
 		return num3;
 		
