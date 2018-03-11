@@ -51,6 +51,7 @@ public class LottoController {
 			case 2:
 				System.out.println("당첨번호:");
 				int result[]=lottoRandom.random();
+				result=lottoSort.sort(result);
 				lottoView.view(result);
 				result=lottery.check(result);
 				
