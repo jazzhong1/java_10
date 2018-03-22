@@ -9,7 +9,7 @@ public class Wrapper_test2 {
 		
 		Double double1=new Double(num);		//
 		
-		System.out.println(integer.intValue()*10);
+		System.out.println(integer.intValue()*10);	
 		System.out.println(integer2.intValue()*10);
 		System.out.println(Integer.toBinaryString(num));	//10진수를 2진수로 변경 
 		System.out.println(Integer.toBinaryString(-1));	//10진수를 2진수로 변경 

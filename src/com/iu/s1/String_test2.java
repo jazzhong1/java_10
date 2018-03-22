@@ -28,7 +28,7 @@ public class String_test2 {
 		int a = 0;
 
 		while (check) {
-			a= s3.indexOf('l', a);
+			a= s3.indexOf('l', a);	//(,a)가 시작
 			if (a != -1) {
 				count++;
 				a++;

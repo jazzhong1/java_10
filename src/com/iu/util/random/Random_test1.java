@@ -9,6 +9,7 @@ public class Random_test1 {
 		long l=ca.getTimeInMillis();
 		Random random=new Random(l); //Calendar를 이용해서 seed를 넣어준다.
 		random.setSeed(l);
+	
 		int num=random.nextInt();	//랜덤한 숫자를 하나 주겠다.
 									//범위 int가 가질수있는 최대~최소
 		

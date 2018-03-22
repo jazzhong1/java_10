@@ -9,6 +9,6 @@ public class String_test1 {
 		char a=ja.charAt(1);
 		System.out.println(a);	//배열인덱스로 받는다.
 		
-		System.out.println(ja.concat("ㄷㄷㅇ"));
+		System.out.println(ja.concat("ㄷㄷㅇ"));	//concat 연결 문자연결
 	}
 }

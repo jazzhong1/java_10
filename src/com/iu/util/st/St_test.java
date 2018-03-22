@@ -13,7 +13,6 @@ public class St_test {
 		
 		StringTokenizer stringTokenizer=new StringTokenizer(nation2," ");
 		//데어터여러가지가 하나의 클래스라면 Tokenizer가 편하다.
-		
 		while(stringTokenizer.hasMoreTokens()){
 			nation=new Nation();
 			String result=stringTokenizer.nextToken();
